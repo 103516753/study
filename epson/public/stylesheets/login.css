@@ -1,0 +1,251 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+a {
+  text-decoration: none; }
+
+.logoBox {
+  color: #fff;
+  font-size: 14px;
+  background: #000;
+  height: 70px;
+  padding: 0 50px; }
+  .logoBox .logo img {
+    margin-top: 16px; }
+  .logoBox .backIndex {
+    float: right;
+    line-height: 70px;
+    color: #fff; }
+
+.title {
+  margin: 0 auto;
+  overflow: hidden;
+  width: calc(80%-50px);
+  height: auto;
+  padding: 25px 25px;
+  background: url(../images/banner01.jpg) -120px top no-repeat; }
+  .title .text {
+    float: left;
+    width: 40%; }
+    .title .text .imgs {
+      text-align: right; }
+      .title .text .imgs img {
+        width: 50%;
+        margin-top: 180px; }
+  .title form {
+    float: left;
+    width: 300px;
+    background: #f2f3f5;
+    padding: 50px 25px;
+    margin-left: 80px;
+    opacity: .9; }
+    .title form .inputText {
+      text-align: center;
+      margin-bottom: 10px; }
+      .title form .inputText label {
+        display: inline-block;
+        width: 45px;
+        height: 38px;
+        background: #fff;
+        text-align: center;
+        vertical-align: middle; }
+        .title form .inputText label .icon-zhanghao {
+          line-height: 38px;
+          font-size: 26px;
+          color: #b2b2b2; }
+      .title form .inputText input {
+        width: 250px;
+        height: 40px;
+        padding: 6px;
+        border: 1px solid #f2f4f6;
+        border-left: none;
+        box-sizing: border-box;
+        font-size: 16px;
+        color: #b2b2b2;
+        vertical-align: middle; }
+    .title form .inputPassword {
+      text-align: center;
+      margin-bottom: 10px; }
+      .title form .inputPassword label {
+        display: inline-block;
+        width: 45px;
+        height: 38px;
+        background: #fff;
+        text-align: center;
+        vertical-align: middle; }
+        .title form .inputPassword label .icon-password {
+          line-height: 38px;
+          font-size: 26px;
+          color: #b2b2b2; }
+      .title form .inputPassword input {
+        width: 250px;
+        height: 40px;
+        padding: 6px;
+        border: 1px solid #f2f4f6;
+        box-sizing: border-box;
+        border-left: none;
+        font-size: 16px;
+        color: #b2b2b2;
+        vertical-align: middle; }
+    .title form .inputRadio {
+      padding-left: 10px;
+      font-size: 14px;
+      color: #333; }
+      .title form .inputRadio .iphoneUser {
+        margin-left: 20px; }
+    .title form .inputSubmit {
+      margin-top: 20px; }
+      .title form .inputSubmit input {
+        width: 300px;
+        height: 40px;
+        background: #10218b;
+        border: none;
+        color: #fff;
+        font-size: 16px; }
+    .title form .forgetAccount .forgetPassword {
+      float: left;
+      color: #10589e;
+      font-size: 14px; }
+    .title form .forgetAccount .account {
+      float: right;
+      color: #10589e;
+      font-size: 14px; }
+    .title form .lineBox {
+      margin-top: 50px; }
+      .title form .lineBox .Leftline {
+        width: 63px;
+        float: left; }
+      .title form .lineBox .Rightline {
+        width: 63px;
+        float: right; }
+      .title form .lineBox .smPng {
+        display: none; }
+      .title form .lineBox p {
+        position: relative;
+        text-align: center;
+        font-size: 14px; }
+        .title form .lineBox p a {
+          color: #337ab7; }
+
+.fluidBox {
+  background: #000;
+  padding: 0 3%; }
+  .fluidBox .fluid {
+    width: 90%;
+    margin: 0 auto;
+    background: #000;
+    padding: 18px 0;
+    height: 26px; }
+    .fluidBox .fluid .fluidLeft {
+      width: 355px;
+      float: left;
+      margin: 0 auto; }
+      .fluidBox .fluid .fluidLeft a {
+        font-size: 14px;
+        color: #fff;
+        line-height: 25px;
+        border-right: 1px solid #fff;
+        margin-right: 5px;
+        padding-right: 5px; }
+    .fluidBox .fluid .fluidCenter {
+      width: 190px;
+      float: right;
+      color: #fff;
+      font-size: 14px;
+      line-height: 25px;
+      margin: 0 auto; }
+    .fluidBox .fluid .fluidRight {
+      width: 270px;
+      float: right;
+      color: #fff;
+      font-size: 14px;
+      line-height: 25px;
+      margin: 0 auto; }
+    .fluidBox .fluid .activeDis {
+      display: none; }
+
+@media screen and (max-width: 770px) {
+  .title {
+    background: url(../images/banner2.jpg) 0px top no-repeat;
+    background-size: 100% 100%; }
+    .title .text {
+      display: none; }
+    .title form {
+      width: 370px;
+      float: none;
+      margin: 0 auto;
+      background: none; }
+      .title form .inputText {
+        margin-bottom: 2px; }
+        .title form .inputText label {
+          display: inline-block;
+          width: 45px;
+          height: 45px;
+          background: #fff;
+          text-align: center;
+          vertical-align: middle; }
+          .title form .inputText label .icon-zhanghao {
+            line-height: 45px;
+            font-size: 26px;
+            color: #b2b2b2; }
+        .title form .inputText input {
+          width: 320px;
+          height: 45px;
+          padding: 6px;
+          border: 1px solid #f2f4f6;
+          border-left: #fff;
+          box-sizing: border-box;
+          font-size: 16px;
+          color: #b2b2b2;
+          vertical-align: top; }
+      .title form .inputPassword {
+        margin-bottom: 2px; }
+        .title form .inputPassword label {
+          display: inline-block;
+          width: 45px;
+          height: 44.5px;
+          background: #fff;
+          text-align: center;
+          vertical-align: middle; }
+          .title form .inputPassword label .icon-zhanghao {
+            line-height: 4.5px;
+            font-size: 26px;
+            color: #b2b2b2; }
+        .title form .inputPassword input {
+          width: 320px;
+          height: 45px;
+          padding: 6px;
+          border: 1px solid #f2f4f6;
+          box-sizing: border-box;
+          font-size: 16px;
+          color: #b2b2b2;
+          vertical-align: top; }
+      .title form .inputRadio {
+        margin-top: 20px;
+        padding-left: 10px;
+        font-size: 14px;
+        color: #333; }
+        .title form .inputRadio .iphoneUser {
+          margin-left: 20px; }
+      .title form .inputSubmit {
+        margin-top: 20px; }
+        .title form .inputSubmit input {
+          width: 370px;
+          height: 40px; }
+      .title form .lineBox {
+        margin-top: 50px; }
+        .title form .lineBox img {
+          display: none; }
+          .title form .lineBox img.smPng {
+            width: 100%;
+            display: block; }
+        .title form .lineBox p {
+          position: relative;
+          text-align: center;
+          font-size: 14px;
+          color: #808080; }
+          .title form .lineBox p a {
+            color: #337ab7; } }
+
+/*# sourceMappingURL=login.css.map */

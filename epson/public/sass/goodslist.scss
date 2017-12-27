@@ -1,0 +1,243 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+ul{
+    list-style: none; 
+}
+a{
+    text-decoration: none;
+}
+.clearfix:after{
+    content: '';
+    display: block;
+    overflow: hidden;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+html,body{
+    width: 100%; 
+}
+// .mark:after{
+//     width: 18px;
+//     height: 40px;
+//     background: url(../images/radio.png) no-repeat 0 0;
+//     position: absolute;
+//     right: 0;
+// }
+
+
+// container
+
+.container{
+    height: 62px;
+    line-height: 62px;
+    padding: 0 30px;
+}
+.goodslistBanner{
+    width: 100%;
+    // text-align: center;
+    img{
+        max-width: 100%;
+        display: none;
+    }
+    .goodslistBanner-XL{
+        display: block;
+    }
+}
+
+
+
+.goodsListBox{
+    width: 1170px;
+    margin: 0 auto;
+    .goodsFind{
+        width: 25%;
+        float: left;
+        padding: 0 15px;
+        box-sizing: border-box;
+        .searchType{
+            height: 32px;
+            cursor: pointer;
+            background:  #0086ef;
+            padding: 4px 15px 4px 4px;
+            margin: 20px 0 10px;
+            input{
+                // position: absolute;
+                // top: 4px;
+                // left: 4px;
+                width: calc(100% - 44px);
+                height: 32px;
+                padding: 0 10px;
+                border: none;
+                line-height: 32px;
+                font-size: 14px;
+                color: #9b9c9c;
+            }
+        }
+        .goodslistType{
+            background: #505050;
+            color: #ffffff;
+            text-indent: 15px;
+            font-size: 18px;
+            line-height: 40px;
+        }
+        .goodslistTypeBox{
+            &.activeFirst{
+                margin-top: 10px;
+            }
+            
+            .goodslistTypeText{
+                background: #dadada;
+                color: #404040;
+                text-indent: 15px; 
+                font-size: 18px;
+                line-height: 40px; 
+            }
+            .goodslistAll{
+                border-left: 1px solid #dadada;
+                border-right: 1px solid #dadada;
+                font-size: 14px;
+                padding-right: 10px;
+                li{
+                    position: relative;
+                    border-bottom: 1px solid #dadada;
+                    padding-left: 15px;
+                    width: 95%;
+                    display: table;
+                    height: 40px;
+                    line-height: 40px;
+                    &.markerColock{
+                        color: #0989ec;
+                    }
+                    .mark{
+                        width: 18px;
+                        height: 40px;
+                        background: url(../images/radio.png) no-repeat center;
+                        position: absolute;
+                        right: 0;
+                        &.markActive{
+                            background: url(../images/radio_active.png) no-repeat center;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .goodsBox{
+        width: 75%;
+        float: left;
+        ul{ 
+            width: 100%;
+            li{
+                float: left;
+                width: 29%;
+                box-sizing: border-box;
+                margin: 0 15px;
+                a{
+                    color: #252525;
+                    img{
+                        width: 100%;
+                    }
+                }
+                h3{
+                    font-weight: 100;
+                    a{
+                        color: #252525;
+                    }
+                }
+                .smalltxt{
+                    font-size: 14px;
+                    line-height: 22px;
+                    color: #727272;
+                }
+                .money{
+                    font-size: 14px;
+                    line-height: 30px;
+                    color: #232627;
+                }
+                .add{
+                    display: block;
+                    color: #0989ec;
+                    font-size: 12px;
+                    line-height: 30px;
+                    padding-right: 13px;
+                }
+                .addBug{
+                    .buyNow{
+                        display: block;
+                        width: 30%;
+                        font-size: 14px;
+                        line-height: 30px;
+                        background: #0989ec;
+                        color: #ffffff;
+                        text-align: center;
+                        float: left;
+                    }
+                    .allDetails{
+                        display: block;
+                        float: left;
+                        margin-left: 4px;
+                        width: 140px;
+                        height: 30px;
+                        font-size: 14px;
+                        color: #fff;
+                        text-indent: 10px;
+                        line-height: 30px;
+                        background: url(../images/search.png) no-repeat 0 0;
+                    }
+                }
+            
+            }
+        }
+    }
+}
+
+
+
+
+@media screen and (max-width:1200px){
+    .goodslistBanner{
+        width: 976px;
+        .goodslistBanner-XL{
+            display: none;
+        }
+        .goodslistBanner-X{
+            display: block;
+        }
+    }
+
+    .goodsListBox{
+        width: 976px;
+        .goodsBox{
+            ul{ 
+                li{
+                    width: 45%;  
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:900px){
+    .goodslistBanner{
+        .goodslistBanner-X{
+            display: none;
+        }
+        .goodslistBanner-M{
+            display: block;
+        }
+    }
+    .goodsListBox{
+        // width: 100%;
+        .goodsFind{
+                display: none;
+            }
+        .goodsBox{
+            float: none;
+            margin: 0 auto;
+        }
+    }
+   
+}

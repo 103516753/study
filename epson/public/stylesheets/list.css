@@ -1,0 +1,303 @@
+* {
+  margin: 0 auto;
+  padding: 0; }
+
+a {
+  text-decoration: none; }
+
+ul {
+  list-style: none; }
+
+.clearfix:after {
+  content: '';
+  display: block;
+  overflow: hidden;
+  height: 0;
+  clear: both;
+  visibility: hidden; }
+
+.meunUser {
+  font-size: 12px;
+  height: 30px;
+  line-height: 30px;
+  text-align: right;
+  margin-right: 40px; }
+  .meunUser a {
+    color: #1e277e; }
+  .meunUser .indexA {
+    padding-right: 6px;
+    color: #1e277e;
+    border-right: 1px solid #ccc; }
+
+.headerBox {
+  background: #000; }
+  .headerBox .header {
+    position: relative;
+    width: 100%;
+    height: 70px; }
+    .headerBox .header .logo {
+      height: 70px;
+      float: left;
+      margin-left: 30px; }
+      .headerBox .header .logo img {
+        margin-top: 16px; }
+    .headerBox .header .nav {
+      position: relative;
+      margin-right: 30px;
+      float: right; }
+      .headerBox .header .nav .navList li {
+        float: left; }
+        .headerBox .header .nav .navList li:hover {
+          background: #fff; }
+          .headerBox .header .nav .navList li:hover a {
+            color: #333; }
+        .headerBox .header .nav .navList li.lastNav {
+          background: #fff; }
+          .headerBox .header .nav .navList li.lastNav a {
+            color: #333;
+            padding: 0 35px; }
+            .headerBox .header .nav .navList li.lastNav a img {
+              margin-right: 20px;
+              vertical-align: middle; }
+        .headerBox .header .nav .navList li a {
+          color: #fff;
+          font-size: 14px;
+          line-height: 70px;
+          padding: 0 15px;
+          border-right: 1px solid #fff; }
+          .headerBox .header .nav .navList li a.notBorder {
+            border: none; }
+        .headerBox .header .nav .navList li .hide-nav {
+          background: #fff;
+          display: none;
+          position: absolute;
+          left: 75px;
+          top: 80px;
+          width: 1149px;
+          height: 140px;
+          z-index: 5; }
+          .headerBox .header .nav .navList li .hide-nav .hideNavList {
+            float: left;
+            height: 140px;
+            margin-right: 15px; }
+            .headerBox .header .nav .navList li .hide-nav .hideNavList li {
+              width: 176.5px;
+              height: 30px;
+              margin-top: 20px; }
+              .headerBox .header .nav .navList li .hide-nav .hideNavList li.smBg {
+                background: url(../images/arrowL2.png) right 0 no-repeat; }
+                .headerBox .header .nav .navList li .hide-nav .hideNavList li.smBg a {
+                  font-size: 16px;
+                  font-weight: 600;
+                  color: #0d3995;
+                  border: none;
+                  padding: 0;
+                  line-height: 0;
+                  margin-top: -20px; }
+          .headerBox .header .nav .navList li .hide-nav .hideCarousel {
+            position: relative;
+            float: left;
+            width: 930px;
+            height: 120px; }
+            .headerBox .header .nav .navList li .hide-nav .hideCarousel .hideCarouselWindow {
+              width: 833px;
+              height: 120px;
+              margin: 0 auto; }
+              .headerBox .header .nav .navList li .hide-nav .hideCarousel .hideCarouselWindow ul li {
+                height: 140px;
+                border: none;
+                padding: 0; }
+                .headerBox .header .nav .navList li .hide-nav .hideCarousel .hideCarouselWindow ul li a {
+                  border: none;
+                  padding: 0; }
+                  .headerBox .header .nav .navList li .hide-nav .hideCarousel .hideCarouselWindow ul li a img {
+                    height: 100px; }
+                  .headerBox .header .nav .navList li .hide-nav .hideCarousel .hideCarouselWindow ul li a p {
+                    text-align: center;
+                    font-size: 12px;
+                    color: #333;
+                    line-height: 0; }
+            .headerBox .header .nav .navList li .hide-nav .hideCarousel .hideCarouselPrev {
+              position: absolute;
+              left: 0px;
+              top: 50%;
+              background: url(../images/arrow_r.png) no-repeat;
+              width: 33px;
+              height: 64px;
+              margin-top: -32px; }
+      .headerBox .header .nav .hideSerach {
+        height: 70px;
+        vertical-align: bottom;
+        display: none; }
+        .headerBox .header .nav .hideSerach img {
+          width: 30px;
+          height: 30px;
+          margin: 20px 4px;
+          cursor: pointer; }
+        .headerBox .header .nav .hideSerach b {
+          display: inline-block; }
+          .headerBox .header .nav .hideSerach b img {
+            display: none; }
+          .headerBox .header .nav .hideSerach b .showHide {
+            display: block; }
+
+.carouselWindow {
+  position: relative;
+  width: 100%;
+  overflow: hidden; }
+  .carouselWindow .carouselImgs {
+    position: relative;
+    left: 0;
+    top: 0;
+    width: 300%; }
+    .carouselWindow .carouselImgs li {
+      width: 33.3%;
+      float: left; }
+      .carouselWindow .carouselImgs li a {
+        width: 100%; }
+        .carouselWindow .carouselImgs li a img {
+          width: 100%;
+          vertical-align: bottom; }
+  .carouselWindow .meunBox {
+    position: absolute;
+    width: 100%;
+    top: 50%; }
+    .carouselWindow .meunBox .prev {
+      float: left;
+      margin-left: 3%; }
+    .carouselWindow .meunBox .next {
+      float: right;
+      margin-right: 3%; }
+
+.familyList {
+  width: 1170px;
+  margin: 0 auto; }
+  .familyList .familyListText {
+    margin: 10px 0; }
+    .familyList .familyListText a {
+      color: #757575; }
+  .familyList .familyListBigImg img {
+    width: 100%; }
+  .familyList .imgText {
+    padding: 10px 0;
+    margin-top: 2%;
+    padding-bottom: 6px;
+    margin-bottom: 6PX;
+    border-bottom: 2px solid #C3C3C3; }
+    .familyList .imgText .homeSm {
+      display: none; }
+  .familyList .familyRow {
+    width: 1200px;
+    margin-right: -15px;
+    margin-left: -15px; }
+    .familyList .familyRow li {
+      width: 370px;
+      float: left;
+      margin: 15px; }
+      .familyList .familyRow li .familyRowImg {
+        width: 95%;
+        display: inline-block; }
+        .familyList .familyRow li .familyRowImg img {
+          width: 100%; }
+      .familyList .familyRow li h2 {
+        font-weight: 100;
+        color: #333; }
+      .familyList .familyRow li p {
+        height: 120px;
+        font-size: 18px;
+        color: #727272; }
+      .familyList .familyRow li .watch {
+        display: inline-block;
+        width: 100px;
+        height: 30px;
+        text-align: center;
+        line-height: 30px;
+        color: #fff;
+        background: #1b8be9;
+        font-size: 14px;
+        margin-top: 20px; }
+
+.footerBox {
+  width: 97%;
+  padding: 0 1.5%;
+  margin-top: 2%;
+  background: #ebebeb;
+  overflow: hidden; }
+  .footerBox .footerNavBox {
+    width: 92%;
+    margin: 5% auto; }
+    .footerBox .footerNavBox .footerNav {
+      width: 20%;
+      position: relative;
+      float: left; }
+      .footerBox .footerNavBox .footerNav ul li {
+        font-size: 14px;
+        width: 100%;
+        padding: 3px 0; }
+        .footerBox .footerNavBox .footerNav ul li b {
+          font-size: 18px;
+          line-height: 40px;
+          color: #676767; }
+        .footerBox .footerNavBox .footerNav ul li a {
+          color: #676767; }
+      .footerBox .footerNavBox .footerNav .footerNavLine {
+        position: absolute;
+        right: 20%;
+        top: 35px;
+        width: 1px;
+        height: 60px;
+        background: #c3c3c3; }
+
+.fluidBox {
+  background: #000;
+  padding: 0 3%; }
+  .fluidBox .fluid {
+    width: 90%;
+    margin: 0 auto;
+    background: #000;
+    padding: 18px 0; }
+    .fluidBox .fluid .fluidLeft {
+      width: 355px;
+      float: left;
+      margin: 0 auto; }
+      .fluidBox .fluid .fluidLeft a {
+        font-size: 14px;
+        color: #fff;
+        line-height: 25px;
+        border-right: 1px solid #fff;
+        margin-right: 5px;
+        padding-right: 5px; }
+    .fluidBox .fluid .fluidCenter {
+      width: 190px;
+      float: right;
+      color: #fff;
+      font-size: 14px;
+      line-height: 25px;
+      margin: 0 auto; }
+    .fluidBox .fluid .fluidRight {
+      width: 270px;
+      float: right;
+      color: #fff;
+      font-size: 14px;
+      line-height: 25px;
+      margin: 0 auto; }
+    .fluidBox .fluid .activeDis {
+      display: none; }
+
+@media screen and (max-width: 1200px) {
+  .familyList {
+    width: 100%;
+    margin: 0 auto; }
+    .familyList .familyRow {
+      width: 100%;
+      margin-right: 0px;
+      margin-left: 0px; }
+      .familyList .familyRow li {
+        width: 30%; } }
+@media screen and (max-width: 770px) {
+  .familyList .imgText .homeBig {
+    display: none; }
+  .familyList .imgText .homeSm {
+    display: block; } }
+
+/*# sourceMappingURL=list.css.map */

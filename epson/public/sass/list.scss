@@ -1,0 +1,415 @@
+*{
+    margin: 0 auto;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+}
+.clearfix:after{
+    content: '';
+    display: block;
+    overflow: hidden;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+
+.meunUser{
+    font-size: 12px;
+    height: 30px;
+    line-height: 30px;
+    text-align: right;
+    margin-right: 40px;
+    a{
+        color: #1e277e;
+    }
+    .indexA{
+        padding-right: 6px;
+        color: #1e277e;
+        border-right: 1px solid #ccc;
+    }
+}
+//header
+.headerBox{
+    background: #000;
+    .header{
+        position: relative;
+        width: 100%;
+        height: 70px;
+        .logo{
+            height: 70px;
+            float: left;
+            margin-left: 30px;
+            img{
+                margin-top: 16px;
+            }
+        }
+        .nav{
+            position: relative;
+            margin-right: 30px;
+            float: right;
+            .navList{
+                // display: none;
+                li{
+                    // position: relative;
+                    float: left;
+                    &:hover{
+                        background: #fff;
+                        a{
+                           color: #333; 
+                        }
+                    }
+                    &.lastNav{
+                        background: #fff;
+                        a{
+                            color: #333;
+                            padding: 0 35px;
+                            img{
+                                margin-right: 20px;
+                                vertical-align: middle;
+                            }
+                        }
+                    }
+                    a{
+                        color: #fff;
+                        font-size: 14px;
+                        line-height: 70px;
+                        padding: 0 15px;
+                        border-right: 1px solid #fff;
+                        &.notBorder{
+                            border: none;
+                        }
+                    }
+                    .hide-nav{
+                        background: #fff;
+                        display: none;
+                        position: absolute;
+                        left: 75px;
+                        top: 80px;
+                        width: 1149px;
+                        height: 140px;
+                        z-index: 5;
+                        .hideNavList{
+                            float: left;
+                            height: 140px;
+                            margin-right: 15px;
+                            li{
+                                width: 176.5px;
+                                height: 30px;
+                                margin-top: 20px;
+                                &.smBg{
+                                    background: url(../images/arrowL2.png) right 0 no-repeat;
+                                    a{
+                                        font-size: 16px;
+                                        font-weight: 600;
+                                        color: #0d3995;
+                                        border: none;
+                                        padding: 0;
+                                        line-height: 0;
+                                        margin-top: -20px;
+                                    }
+                                }
+                            }
+                        }
+                        .hideCarousel{
+                            position: relative;
+                            float: left;
+                            width: 930px;
+                            height: 120px;
+                            .hideCarouselWindow{
+                                width: 833px;
+                                height: 120px;
+                                margin: 0 auto;
+                                ul{
+                                    
+                                    li{
+                                        height: 140px;
+                                        border: none;
+                                        padding: 0;
+                                        a{
+                                            border: none;
+                                            padding: 0;
+                                            img{
+                                                height: 100px;
+                                            }
+                                            p{
+                                                text-align: center;
+                                                font-size: 12px;
+                                                color: #333;
+                                                line-height: 0;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                           
+                            .hideCarouselPrev{
+                                position: absolute;
+                                left: 0px;
+                                top: 50%;
+                                background: url(../images/arrow_r.png) no-repeat;
+                                width: 33px;
+                                height: 64px; 
+                                margin-top: -32px;
+                            }
+                        }
+                    }
+                }
+            }
+            .hideSerach{
+                height: 70px;
+                vertical-align: bottom;
+                display: none;
+                img{
+                    // margin-top: 20px;
+                    width: 30px;
+                    height: 30px;
+                    margin: 20px 4px;
+                    cursor: pointer;
+                }
+                b{
+                    display: inline-block;
+                    img{
+                        display: none;
+                    }
+                    .showHide{
+                        display: block;
+                    }
+                }
+               
+            }
+        }
+    }   
+}
+.carouselWindow{
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    .carouselImgs{
+        position: relative;
+        left: 0;
+        top: 0;
+        width: 300%;
+        li{
+            width: 33.3%;
+            float: left;
+            a{
+                width: 100%;
+                img{
+                    width: 100%;
+                    vertical-align: bottom;
+                }
+            }
+        }   
+    }
+    .meunBox{
+        position: absolute;
+        width: 100%;
+        top: 50%;
+        .prev{
+            float: left;
+            margin-left: 3%;
+        }
+        .next{
+            float: right; 
+            margin-right: 3%;
+        }
+    }
+}
+
+
+.familyList{
+    width: 1170px;
+    margin: 0 auto;
+    .familyListText{
+        margin: 10px 0;
+        a{
+            color: rgb(117, 117, 117);
+        }
+        
+    }
+    .familyListBigImg{
+        img{
+            width: 100%;
+        }
+    }
+    .imgText{
+        padding: 10px 0;
+        margin-top: 2%;
+        padding-bottom: 6px;
+        margin-bottom: 6PX;
+        border-bottom: 2px solid #C3C3C3;
+        .homeSm{
+            display: none;
+        }
+    }
+    .familyRow{
+        width: 1200px;
+        margin-right: -15px;  
+        margin-left: -15px; 
+        li{
+            width: 370px;
+            float: left;
+            margin: 15px;
+            // border: 1px solid #aaa;
+            .familyRowImg{
+                width: 95%;
+                display: inline-block;
+                img{
+                    width: 100%;
+                }
+            }
+            h2{
+                font-weight: 100;
+                color: #333;
+            }
+            p{
+                height: 120px;
+                font-size: 18px;
+                color: #727272;
+            }
+            .watch{
+                display: inline-block;
+                width: 100px;
+                height: 30px;
+                text-align: center;
+                line-height: 30px;
+                color: #fff;
+                background: #1b8be9;
+                font-size: 14px;
+                margin-top: 20px;
+            }
+        }
+    }
+}
+
+
+// footer
+.footerBox{
+    width: 97%;
+    padding: 0 1.5%;
+    margin-top: 2%;
+    // height: 221px;
+    background: #ebebeb;
+    overflow: hidden;
+    .footerNavBox{
+        width: 92%;
+        margin: 5% auto ;
+        .footerNav{
+            width: 20%;
+            position: relative;
+            float: left;
+            ul{
+                
+                li{
+                    font-size: 14px;
+                    width: 100%;
+                    // height: 31px;
+                    padding: 3px 0;
+                    b{
+                        font-size: 18px;
+                        line-height: 40px;
+                        color: #676767;
+                    }
+                    a{
+                        color: #676767;
+                    }  
+                &.footerNavTitle{
+                    // height: 38px;
+                }
+                } 
+            }
+            .footerNavLine{
+                position: absolute;
+                right: 20%;
+                top: 35px;
+                width: 1px;
+                height: 60px;
+                background: #c3c3c3;
+            }
+            
+        }
+    
+    } 
+}
+
+
+// fluid
+.fluidBox{
+    background: #000;
+    padding: 0 3%;
+    .fluid{
+        width: 90%;
+        margin: 0 auto;
+        background: #000;
+        padding: 18px 0;
+        .fluidLeft{
+            width: 355px;
+            float: left;
+            margin: 0 auto;
+            a{
+                    font-size: 14px;
+                    color: #fff;
+                    line-height: 25px;
+                    border-right: 1px solid #fff;
+                    margin-right: 5px;
+                    padding-right: 5px;
+
+            }
+        }
+        .fluidCenter{
+            width: 190px;
+            float: right;
+            color: #fff;
+            font-size: 14px;
+            line-height: 25px;
+            margin: 0 auto;
+        }
+        .fluidRight{
+            // display: none;
+            width: 270px;
+            float: right;
+            color: #fff;
+            font-size: 14px;
+            line-height: 25px;
+            margin: 0 auto;
+        }
+        .activeDis{
+            display: none;
+        }
+    }
+}
+
+
+
+@media screen and (max-width:1200px){
+    .familyList{
+        width: 100%;
+        margin: 0 auto;
+        .familyRow{
+            width: 100%;
+            margin-right: 0px;  
+            margin-left: 0px; 
+            li{
+                width: 30%;
+                // width: calc(33.3%-30px);
+                // margin: 15px;
+            }
+        }
+    }
+}
+@media screen and (max-width:770px){
+    .familyList{
+        .imgText{
+            .homeBig{
+                display: none;
+            }
+            .homeSm{
+                display: block;
+            }
+        }
+    }
+}
