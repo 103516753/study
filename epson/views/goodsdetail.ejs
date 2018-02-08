@@ -1,0 +1,290 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>详情页</title>
+    <link rel="stylesheet" href="stylesheets/goodsdetail.css">
+    <link rel="stylesheet" href="stylesheets/index.css">
+</head>
+<body>
+    <div class="meunUser">
+        <div class="meunUserBox">
+            <a class="indexA" href="index.html">首页</a>
+            <a href="login.html">用户俱乐部</a>
+        </div>
+        <p class="usernameBox" style="display:none;">您好 ! &nbsp;
+            <a class="username" href="#"></a>
+            &nbsp;&nbsp;&nbsp;[ <a href="login.html" style="color:#f80;">注销</a> ]
+        </p>
+    </div>
+    <div class="container clearfix">
+        <h1 class="main_title">
+            <!-- 墨仓式<sup>®</sup>L405 <span>无线一体机</span> -->
+            <%=goodsname%>
+        </h1>
+        <div class="showBox">
+            <div class="showLeft">
+                <div class="showBigImg clearfix">
+                    <ul class="imgsBox clearfix">
+                        <li>
+                            <a href="javascript:;">
+                                <img class="widthImg" src="images/L405-1-new.png">
+                            </a> 
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="images/L405-2.png">
+                            </a> 
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="images/L405-3.png">
+                            </a>  
+
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="images/L405-4.png">
+                            </a> 
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <img class="widthImg" src="images/L405-1-new.png">
+                            </a> 
+                        </li>
+                    </ul>
+                </div>
+                <div class="smImgBox clearfix">
+                    <ul class="smImgBoxList clearfix">
+                        <li class="borderActive">
+                            <img src="images/L405-1-new.png">
+                        </li>
+                        <li>
+                            <img src="images/L405-2.png">
+                        </li>
+                        <li>
+                            <img src="images/L405-3.png">
+                        </li>
+                        <li>
+                            <img src="images/L405-4.png">
+                        </li>
+                    </ul>
+                    <div class="prev">
+                        <img src="images/sw_l.png">
+                    </div>
+                    <div class="next">
+                        <img src="images/sw_r.png">
+                    </div>
+                </div>
+                <p class="printDisplay_share">
+                    <span class="share-text">我要分享：</span> 
+                    <a href="javascript:;">
+                        <img src="images/prdshare1.png">
+                    </a> 
+                    <a class="weChat" href="javascript:;">
+                        <img src="images/prdshare2.png">
+                    </a>
+                </p>
+            </div>
+           <div class="showRight">
+                <!-- <p class="price">
+                    建议零售价：<span>￥1,299</span>
+                </p> -->
+                <ul class="printDisplay_feature">
+                    <li>
+                        省钱：黑白每页1分钱<sup>*1</sup>，彩色每页3分5<sup>*1</sup></li>
+                    <li>
+                        省时：高速打印，提升效率</li>
+                    <li>
+                        无线：Wi-Fi + 无线直连，无路由也可实现无线打印、无线扫描</li>
+                    <li>
+                        方便：支持手机打印、远程打印、接收E-mail打印</li>
+                    <li>
+                        安心：无碳粉粉尘，零臭氧排放<sup>*6</sup>, 原厂保修（含打印头）</li>
+                    <li>
+                        海量：单套耗材打印黑色4,500页<sup>*1</sup> 或彩色7,500页<sup>*1</sup></li>
+                    <li>
+                        省力：每天打10页，一年不换墨<sup>*1</sup></li>
+                </ul>
+                <ul class="printDisplay_util">
+                    <li>
+                        <span>打印分辨率高至：</span>5760 x 1440 dpi（带有智能墨滴变换技术）</li>
+                    <li>
+                        <span>打印黑色文本(A4)：</span>约33 PPM (经济模式)<sup>*2</sup>,约10 IPM (标准模式)<sup>*3</sup></li>
+                    <li>
+                        <span>打印彩色文本(A4)：</span>约15 PPM(经济模式)<sup>*2</sup>,约5 IPM (标准模式)<sup>*3</sup></li>
+                    <li>
+                        <span>照片（4 x 6英寸）：</span>69秒/页（有边距，标准模式，高质量光泽照片纸）<sup>*4</sup></li>
+                    <li>
+                        <span>扫描质量：</span>本机最大物理分辨率 &nbsp;1200×2400 dpi</li>
+                </ul>
+                <div class="goodsinfos">
+                    <div class="goodsPrice">
+                        商品价格：
+                        <span>￥<%=goodsprice%></span>
+                    </div>
+                    <div class="goodsColor">
+                        颜色分类：
+                        <span>黑色</span>
+                    </div>
+                    <div class="goodsNum">
+                        数量：
+                        <b class="goodsCalc">-</b>
+                        <input type="text" value="<%=goodsnum%>">
+                        <b class="goodsAdd">+</b>
+                    </div>
+                    <div class="buyNow">
+                        <a href="shopcart.html">立即购买</a>
+                        <a href="shopcart.html">加入购物车</a>
+                    </div>
+                </div>
+           </div>
+        </div>
+    </div>
+
+    
+    <div class="conmentBox">
+        <hr/>
+        <h3>评论列表</h3>
+        <ul>
+            <% conments.forEach(function (conment1){
+                %>
+            <li>
+                <p><%=conment1.username%>&nbsp;&nbsp;&nbsp;&nbsp;<%=conment1.conmenttime%></p>
+                <p><%=conment1.conment%></p>
+            </li>
+            <%
+            }); %>
+        </ul>
+        <hr/>
+
+        <input class="firstBtn" type="button" value="首页">
+        <input class="previousBtn" type="button" value="上页">
+        <span class="spanpageindex"></span>
+        <input  class="nextBtn" type="button" value="下页">
+        <input  class="lastBtn" type="button" value="末页">
+        <input class="goBtn" type="button" value="go">
+        <input class="txtcurrpage" type="text" style = "width:20px;text-align:center;">/<%=maxPage%>
+        <hr/>
+    </div>
+
+    <div class="sendConment">
+        <form method="post" action="commentSave">
+            <textarea name="conment"  style="width:300px;height:130px;"></textarea>
+            <input class="send" type="submit" value="发表评论">
+            <input name="goodsid" type="hidden" value="001" >
+        </form>
+    </div>
+    
+
+
+    <script src="js/jquery-1.8.3.js"></script>
+    <script src="js/goodsdetail.js"></script>
+    <script>
+        window.onload = function(){
+
+            let maxPage = <%=maxPage %>;
+            let pageIndex = <%=pageIndex%>
+
+            // 显示当前页码
+            $('.txtcurrpage').val(pageIndex)
+
+            $('.firstBtn').click(function(){
+                location.href="goodsdetail?goodsid=001&pageindex=1";
+               
+            });
+            $('.previousBtn').click(function(){
+                pageIndex--;
+                if(pageIndex<1){
+                    pageIndex = 1;
+                }else{
+                    location.href="goodsdetail?goodsid=001&pageindex="+pageIndex;
+                }
+            });
+            $('.nextBtn').click(function(){
+                pageIndex++;
+                if(pageIndex > maxPage){
+                    pageIndex = maxPage;
+                    pageIndex = maxPage;
+                     $('.txtcurrpage').val(maxPage)
+                }else{
+                    location.href="goodsdetail?goodsid=001&pageindex="+pageIndex;
+                }
+            });
+            
+            $('.lastBtn').click(function(){
+                location.href="goodsdetail?goodsid=001&pageindex="+maxPage;
+            });
+
+            //根据处理好的起始页码和结束页码，循环显示数字。
+
+            let str="";
+
+            if(pageIndex>2){
+                str+="...";
+                startPage = pageIndex - 1;
+                endPage = pageIndex + 1;
+            }else{
+                startPage = 1;
+                endPage = 3
+            }
+
+            if(pageIndex+1<maxPage){
+            }else{
+                startPage = maxPage - 2;
+                endPage = maxPage;
+            }
+           
+
+            for(let i=startPage;i<=endPage;i++){
+                if(i==pageIndex){
+                    str+="&nbsp;<a style='color:red' href='goodsdetail?goodsid=001&pageindex="+i+"'> "+i+"</a>&nbsp;";
+                }else{
+                    str+="&nbsp;<a href='goodsdetail?goodsid=001&pageindex="+i+"'> "+i+"</a>&nbsp;";
+                }
+            }
+             if(pageIndex+1<maxPage){
+                str+="...";
+            }
+            $('.spanpageindex').html(str)
+
+            // 点击go
+            $('.goBtn').click(function(){
+                console.log( $('.txtcurrpage').val());
+                let numBox = $('.txtcurrpage').val()
+                if(numBox>maxPage){
+                    numBox = maxPage
+                }
+                if(numBox<1){
+                    numBox = 1
+                }
+                location.href="goodsdetail?goodsid=001&pageindex="+numBox;
+            })
+
+
+
+            $('.send').click(function(){
+                //  var a = $('textarea[name="conment"]').val()
+                // console.log(a)
+                // return false
+                if(!document.cookie){
+                    
+                    alert("亲，请先登录")
+                    return false
+                }else if($('textarea[name="conment"]').val()==""){
+                    alert("请输入内容")
+                    return false
+                }else{
+                    
+                }
+                
+            })
+        }
+    
+
+    </script>
+</body>
+</html>

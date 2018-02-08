@@ -25,7 +25,6 @@ a{
         font-size: 24px;
         color: #000000;
         font-weight: normal;
-        line-height: 1.5em;
         border-bottom: 2px solid #c3c3c3;
         padding: 0 0 10px;
         margin: 0;
@@ -33,4 +32,224 @@ a{
             color: #666;
         }
     }
+    .showBox{
+        width: 100%;
+        margin: 0 auto;
+        .showLeft{
+            width: 40%;
+            float: left;
+            .showBigImg{
+                width: 100%;
+                overflow: hidden;
+                .imgsBox{
+                    position: relative;
+                    width: 500%;
+                    overflow: hidden;
+                    li{
+                        width: 20%;
+                        float: left; 
+                        a{
+                            img{  
+                                width: 100%;
+                            }
+                        }
+                    }
+                }
+            }
+            .smImgBox{
+                width: 100%;
+                position: relative;
+                margin: 0 auto;
+                .smImgBoxList{
+                    width: calc(100%-80px);
+                    margin: 0 auto;
+                    margin: 0 40px;
+                    li{
+                        float: left;
+                        width: 25%; 
+                        cursor: pointer;
+                        &.borderActive{
+                            border-bottom: 2px solid #0989ec;
+                        }
+                        img{
+                            width: 100%;
+                        }
+                    }
+                }
+                .prev{
+                    position: absolute;
+                    left: 0px;
+                    top:50%;
+                    vertical-align: middle;
+                    margin-top: -12px;
+                    cursor: pointer;
+                    img{
+                        width: 24px;
+                    }
+                }
+                .next{
+                    position: absolute;
+                    right: 0px;
+                    top:50%;
+                    margin-top: -12px;
+                    vertical-align: middle;
+                    cursor: pointer;
+                    img{
+                        width: 24px;
+                    }
+                }
+            }
+            .printDisplay_share{
+                margin-top: 30px;
+                height: 30px;
+                line-height: 30px;
+                color: #5d5a5a;
+                font-size: 14px;
+                vertical-align: middle; 
+                .share-text{
+                    margin-right: 10px;
+                    vertical-align: middle;
+                }
+                .weChat{
+                    margin-left: 20px;
+                    vertical-align: middle;
+                }
+            }
+        }
+        .showRight{
+            width: 52%;
+            float: left;
+            margin-left: 8%;
+            .price{
+                font-size: 14px;
+                color: black;
+                margin: 20px 0;
+                span{
+                    font-size: 28px;
+                    font-weight: 600;
+                }
+            }
+            .printDisplay_feature{
+                // margin-top: 50px;
+                margin-bottom: 20px;
+                li{
+                    padding-left: 18px;
+                    font-size: 16px;
+                    color: #252525;
+                    line-height: 24px;
+                    font-weight: bold;
+                    background: url(../images/prd_dot.png) 0 8px no-repeat;
+                }
+            }
+            .printDisplay_util{
+                li{
+                    font-size: 14px;
+                    color: #5d5a5a;
+                    line-height: 24px;
+                    span{
+                        color: #232627;
+                        font-weight: bold;
+                    }
+                }
+            }
+            .goodsinfos{
+                padding-top: 15px;
+                padding-left: 25px;
+                background: #eee;
+                .goodsPrice{
+                    font-size: 14px;
+                    color: #666;
+                    margin-bottom: 10px;
+                    span{
+                        font-size: 28px;
+                        font-weight: 600;
+                        color: red;
+                        vertical-align: middle;
+                    }
+                }
+                .goodsColor{
+                    font-size: 14px;
+                    color: #666;
+                    span{
+                        padding: 5px;
+                        font-size: 14px;
+                        color: #000;
+                        display: inline-block;
+                        border: 2px solid red;
+                        line-height: 20px; 
+                        background: url(../images/check.png) right bottom no-repeat;
+                    }
+                }
+                
+                .goodsNum{
+                    font-size: 14px;
+                    color: #666;
+                    margin: 15px 0;
+                    b{
+                        display: inline-block;
+                        width: 22px;
+                        height: 22px;
+                        font-size: 22px;
+                        font-weight: 100;
+                        color: #666;
+                        text-align: center;
+                        line-height: 20px;
+                        border: 1px solid #aaa;
+                        background: #ccc;
+                        vertical-align: middle;
+                        cursor: pointer;
+                    }
+                    input{
+                        width: 25px;
+                        height: 21px;
+                        text-align: center;
+                        outline: none;
+                    }
+                }
+                .buyNow{
+                    padding-bottom: 18px;
+                    border-bottom: 1px solid #e0e0e0;
+                    // text-align: center;
+                    a{
+                        display: inline-block;
+                        width: 160px;
+                        height: 30px;
+                        line-height: 30px;
+                        font-size: 15px;
+                        text-align: center;
+                        color: #fff;
+                        background-color: #1b8be9;
+                        cursor: pointer;
+                        margin-right: 30px;
+                        border-radius: 3px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:1200px){
+    .container{
+        width: 970px;
+    }
+}
+@media screen and (max-width:990px){
+    .container{
+        width: 750px;
+    }
+}
+@media screen and (max-width:770px){
+    .container{
+        // width: calc(100%-30px);
+        width: 90%  ;
+        padding: 0 10%;
+        .showBox{
+            width: 100%;
+            float: none;
+            .showLeft{
+                width: 90%;
+            }
+        }
+    }    
 }

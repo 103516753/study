@@ -3,12 +3,20 @@ var path = require('path');
 var favicon = require('serve-favicon');
 var logger = require('morgan');
 var cookieParser = require('cookie-parser');
+var session = require('express-session');
 var bodyParser = require('body-parser');
+var formidable = require('formidable');
 
 var index = require('./routes/index');
 var users = require('./routes/users');
 var regSev = require('./routes/regSev');
 var loginCheck = require('./routes/loginCheck');
+var goodsdetail = require('./routes/goodsdetail');
+var commentSave = require('./routes/commentSave');
+var deletegoods = require('./routes/deletegoods');
+var addgoods = require('./routes/addgoods');
+var uploader = require('./routes/uploader');
+var regCheck = require('./routes/regCheck');
 
 var app = express();
 
@@ -23,11 +31,25 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
+app.use(session({
+                  secret: 'recommend 128 bytes random string',
+                  cookie: { maxAge: 20 * 60 * 1000 },
+                  resave: true,
+                  saveUninitialized: true
+              })
+        );
 
 app.use('/', index);
 app.use('/users', users);
 app.use('/regSev', regSev);
 app.use('/loginCheck', loginCheck);
+app.use('/goodsdetail', goodsdetail);
+app.use('/commentSave', commentSave);
+app.use('/deletegoods', deletegoods);
+app.use('/addgoods', addgoods);
+app.use('/uploader', uploader);
+app.use('/regCheck', regCheck);
+
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

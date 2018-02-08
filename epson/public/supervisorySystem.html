@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>后台管理系统</title>
+    <link rel="stylesheet" href="stylesheets/supervisory.css">
+</head>
+<body>
+    <div class="addgoods">
+        <form action="addgoods" method="post">
+            <p>商品编号：<input type="text" name="goodsid"></p>
+            <p>商品名称：<input type="text" name="goodsname"></p>
+            <p>商品数量：<input type="text" name="goodsnum"></p>
+            <p>商品价格：<input type="text" name="goodsprice"></p>
+            <p class="goodsintroduce">商品介绍：<textarea name="goodsintroduce"></textarea></p>
+            
+            <iframe src="upimg.html" frameborder="0" style="width:100%">
+    
+            </iframe>
+            
+            <input type="submit" value="添加货物">
+        </form>
+        
+
+    </div>
+
+
+
+    <br>
+    <div>
+    <form action="deletegoods" method="post">
+        <p>商品编号：<input type="text" name="goodsid"></p>
+        <p>商品名称：<input type="text" name="goodsname"></p>
+        <input type="submit" value="删除货物">
+    </form>
+    </div>
+   
+</body>
+</html>

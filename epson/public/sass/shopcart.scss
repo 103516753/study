@@ -1,0 +1,400 @@
+
+*{
+    padding: 0;
+    margin: 0;
+}
+ul{
+    list-style: none; 
+}
+a{
+    text-decoration: none;
+}
+.clearfix:after{
+    content: '';
+    display: block;
+    overflow: hidden;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+
+.allBox{
+    padding:5%;
+    .topshop{
+        width: 100%;
+        height: 80px;
+        margin: 0 auto;
+        padding: 20px 0 55px;
+        color: #666;
+        p{
+            margin-top: 20px;
+            width: 100%;
+            height: 55%;
+            background: url(../images/progress_bar.png) 0 0 no-repeat;
+            background-size: 100%;
+        }
+        span{
+            margin-left: 50px;
+        }
+        b{
+            margin-left: 65px;
+            font-weight: 100;
+        }
+        label{
+            margin-left: 60px;
+            font-weight: 100;
+        }
+    }
+
+
+    // 第二部分
+    .messageAll{
+        width: 100%;
+        margin: 0 auto;
+        font-size: 12px;
+        color: #333;
+        .text-ul{ 
+            width: 100%;
+            height: 30px;
+            background: #f9f9f9;
+            font-size: 14px;
+            border: 1px solid #ccc;
+            li{
+                line-height: 30px;
+                float: left;
+                margin:0 5%;
+                &.goods1{
+                    width:30%;
+                    padding: 0;
+                    text-align: center;
+                }
+            }
+        }
+        .dealers{
+            padding: 3% 0 1% 1%;
+            font-size: 15px; 
+            color: #333;
+        }
+        .productContent{
+            border: 1px solid #ccc;
+            .cartProduct{
+                font-size: 12px;
+                color: #666;
+                background-color: #fff6ee;
+                border-top: 1px solid #ccc;
+                padding: 0 2% 1% 2%;
+                margin-top: -1px;
+                h4{
+                    padding-top: 10px;
+                    font-weight: 100;
+                    b{
+                        font-weight: 100;
+                        padding: 0 5px;
+                        color: #fff;
+                        background-color: #f60;
+                        margin-right: 10px;
+                    }
+                    a{
+                        color: #6d9d03;
+                        margin-left: 10px;
+                    }
+                }
+            }
+            //产品
+            .cart-product-ul{
+                width: 100%;
+                li{
+                    height: 80px;
+                    padding-top: 15px;
+                    border-top: 1px solid #ccc;
+                    img{
+                        float: left;
+                        width: 60px;
+                        height: 60px;
+                        border: 1px solid #f5f5f5;
+                        margin-left: 20px;
+                    }
+                    label{
+                        overflow: hidden;
+                        display: block;
+                        float: left;
+                        width: 25%;
+                        height: 60px;
+                        line-height: 60px;
+                        margin-left: 3%;
+                    }
+                    .carr-num{
+                        float: left;
+                        margin-left: 5%;
+                        span{
+                            display: inline-block;
+                            width: 20px;
+                            height: 20px;
+                            line-height: 20px;
+                            font-size: 16px;
+                            text-align: center;
+                            border: 1px solid #ccc;
+                            cursor: pointer;
+                            margin-top: 20px;
+                        }
+                        input{
+                            width: 30px;
+                            height: 19px;
+                            line-height: 19px;
+                            text-align: center;
+                            border: 1px solid #CCC;
+                            cursor: pointer;
+                            vertical-align: middle;
+                            margin: -5px 0 0 0px;
+                            padding-top: 1px;
+                        }
+                    }
+                    .cartprice{
+                        position: relative;
+                        float: left;
+                        margin-top: 23px;
+                        text-align: center;
+                        margin-left: 8%;
+                    }
+                    .priceAll{
+                        float: left;
+                        line-height: 60px;
+                        text-align: center;
+                        color: #f60;
+                        margin-left: 10%;
+                    }
+                    .cart-delete{
+                        float: left;
+                        line-height: 20px;
+                        margin-top: 10px;
+                        margin-left: 6%;
+                        width: 64px;
+                        a{
+                            color: #666;   
+                            cursor: pointer;
+                        }
+                    }
+                }
+            }
+        }
+        //继续购物
+        .continueShop{
+            a{
+                display: inline-block;
+                width: 100px;
+                height: 30px;
+                font-size: 14px;
+                color: #666;
+                line-height: 30px;
+                border: 1px solid #eee;
+                background: #f60;
+                color: #fff;
+                text-align: center;
+                margin-top: 20px;
+                margin-bottom: 20px;
+            }
+        }
+        // 优惠券
+        .discountCoupon{
+            position: relative;
+            width: 50%;
+            height: 41px;
+            line-height: 41px;
+            color: #333;
+            font-size: 14px;
+            border: 1px solid #ccc;
+            i{
+                float: left;
+                width: 15px;
+                height: 15px;
+                background: url(../images/tubiao.png) -89px -911px;
+                margin: 13px 10px 0 20px;
+                cursor: pointer;
+            } 
+            span{
+                float: left;
+                font-size: 14px;
+                
+            }
+            input{
+                margin-top: 8px;
+                margin-left: 20px;
+                float: left;
+                width: 45%;
+                line-height: 22px;
+                text-align: center;
+                outline: none;
+                box-sizing: border-box;
+                border: 1px solid #ccc;
+            }
+            b{
+                width: 22px;
+                height: 22px;
+                float: left;
+                background: url(../images/tubiao.png) -124px -911px;
+                cursor: pointer;
+                margin-top: 8px;
+                margin-left: -1px;
+                border: 1px solid #ccc;
+                border-left: none;
+            }
+            label{
+                float: left;
+                width: 70px;
+                height: 24px;
+                margin: 8px 0 0 0;
+                font-size: 14px;
+                background-color: #f60;
+                color: #fff;
+                line-height: 24px;
+                text-align: center;
+                cursor: pointer;
+                border-radius: 3px;
+                margin-left: 20px;
+            }
+            .discountCouponList{
+                display: none;
+                position: absolute;
+                left: 143px;
+                top: 31px;
+                width: 45%;
+                text-align: center;
+                border: 1px solid #ccc;
+                box-sizing: border-box;
+                background-color: #fff;
+                li{
+                    color: #f60;
+                    line-height: 20px;
+                    padding-right: 22px;
+                    cursor: pointer;
+                }
+            }
+        }
+
+        // 删除弹出框
+        .deleteGoods{
+            display: none;
+            position: fixed;
+            top: 20%;
+            left: 30%;
+            width: 40%;
+            height: 30%;
+            font-size: 14px;
+            color: #f60;
+            border: 6px solid #ccc;
+            background-color: #fff;
+            z-index: 10;
+            text-align: center;
+            h2{
+                width: 100%;
+                height: 40px;
+                i{
+                    width: 14px;
+                    height: 14px;
+                    float: right;
+                    background: url(../images/tubiao.png) -107px -912px;
+                    margin: 12px 20px 0px 0px;
+                    cursor: pointer
+                }
+            }
+            p{
+                height: 26px;
+                line-height: 26px;
+                text-align: center;
+                margin-top: 1%;
+                margin-bottom: 7%;
+                i{
+                    display: inline-block;
+                    width: 26px;
+                    height: 26px;
+                    background: url(../images/tubiao.png) -476px -911px;
+                    vertical-align: middle;
+                }
+            }
+            .deleteTrue{
+               display: inline-block;
+                color: #fff;
+                width: 100px;
+                height: 30px;
+                line-height: 30px;
+                text-align: center;
+                border: 1px solid #f60;
+                background: #f60;
+                border-radius: 3px;
+                cursor: pointer;
+            }
+            .deleteFalse{
+                display: inline-block;
+                width: 100px;
+                height: 30px;
+                line-height: 30px;
+                text-align: center;
+                border: 1px solid #f60;
+                background: #fff;
+                border-radius: 3px;
+                cursor: pointer;
+                margin-left: 40px;
+            }
+        }
+        //结算
+        .settleAccounts{
+            text-align: right;
+            font-size: 14px;
+            .goodsAll{
+                line-height: 24px;
+                b{
+                    font-weight: 100;
+                    margin-left: 20px;
+                }
+                label{
+                    display: inline-block;
+                    width: 120px;
+                    color: #f60;
+                    b{
+                        margin-left: 0px;
+                    }
+                }
+                span{
+                    color: #f60;
+                }
+            }
+            .goSettle{
+                width: 100%;
+                color: #666;
+                border-top: 1px solid #ccc;
+                padding: 15px 0 8px 0;
+                margin-top: 15px;
+                line-height: 40px;
+                span{
+                    font-size: 24px;
+                    color: #f60;
+                    line-height: 34px;
+                    font-weight: 600;
+                }
+                .goSettleAll{
+                    display: inline-block;
+                    width: 190px;
+                    height: 34px;
+                    font-weight: 100;
+                    line-height: 34px;
+                    background-color: #f60;
+                    color: #fff;
+                    text-align: center;
+                    font-size: 16px;
+                    border-radius: 3px;
+                    cursor: pointer;
+                    margin-left: 20px;
+                    b{
+                        display: inline-block;
+                        font-family: '宋体';
+                        color: #fff;
+                        margin-left: 10px;
+                    }
+                }
+            }
+        }
+    } 
+}
+
+
+

@@ -8,12 +8,11 @@ router.post('/', function(req, res, next) {
     userinfos.findAll({username:req.body.username,userpass:req.body.userpass},function(isSuccess){
       console.log(isSuccess)
       if(isSuccess){
-        console.log(111)
         //保存session
-        // req.session.username = req.body.username;
-        //保存cookie
-        // res.cookie("username",req.body.username);
-        console.log(222)
+        req.session.username = req.body.username;
+        
+        // 保存cookie
+        res.cookie("username",req.body.username);
         //跳转到首页
         res.redirect("index.html");
       }else{

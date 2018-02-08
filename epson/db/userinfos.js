@@ -1,7 +1,7 @@
 var mongoose = require('mongoose')
-let db = mongoose.createConnection('10.35.167.85','password');
+let db = mongoose.createConnection('10.35.165.227','password');
         
-console.log('开始添加数据');
+console.log('开始添加数据1');
 
 // 定义一个模板
 var regSchema = new mongoose.Schema({
@@ -16,12 +16,10 @@ var regModel = db.model('passwords',regSchema);
 module.exports = {
     
     findAll:function(condition,callback){
-        const mongoose = require('mongoose');
-       
-    
+        console.log("进来了"+condition.username)
         //3）、查询
         regModel.find(condition,function(err,data){
-            console.log(data.length)
+            console.log("就是这里")
             if(err){
                 console.log(err);
             }else{

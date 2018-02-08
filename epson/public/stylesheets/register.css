@@ -29,7 +29,8 @@ a {
     background: #f2f3f5;
     padding: 50px 25px;
     opacity: .9;
-    margin: 0 auto; }
+    margin: 0 auto;
+    position: relative; }
     .title form .inputText {
       text-align: center;
       margin-bottom: 10px; }
@@ -54,6 +55,14 @@ a {
         font-size: 16px;
         color: #b2b2b2;
         vertical-align: middle; }
+    .title form .tooltipText {
+      position: absolute;
+      top: 60px;
+      left: 77%;
+      text-align: center;
+      margin-top: -5px;
+      font-size: 14px;
+      color: #f60; }
     .title form .inputPassword {
       text-align: center;
       margin-bottom: 10px; }

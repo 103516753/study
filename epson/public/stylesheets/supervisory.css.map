@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AACI,wBAAQ;EACJ,KAAK,EAAE,KAAK;EACZ,MAAM,EAAE,KAAK;EACb,cAAc,EAAE,GAAG",
+"sources": ["../sass/supervisory.scss"],
+"names": [],
+"file": "supervisory.css"
+}

@@ -2,6 +2,30 @@
 let iWidth = 0;
 let index = 0;
 iWidth = $(document.body).width();
+if(iWidth<780){
+        
+    // $('.fluidCenter').css({float:'none'})
+    // $('.fluidLeft').css({float:'none'})
+    // $('.fluidRight').css({float:'none'});
+
+
+    $('.footerNav').css({width:'50%'}).parent('.footerNavBox').css({'margin-left':'10%','margin-top':'3%'});
+    $('.footerNavLine').hide();
+    
+}else{
+    $('.footerNav').css({width:''}).parent('.footerNavBox').css({'margin-left':'','margin-top':''});
+    $('.footerNavLine').show();
+
+    $('.fluidCenter').css({float:''})
+    $('.fluidLeft').css({float:''})
+    $('.fluidRight').css({float:''});
+}
+
+if(iWidth<450){
+    console.log(iWidth/400*195)
+    $('.meunList li').width(iWidth/400*195 + 30)
+    $('.meunList li a').width(iWidth/400*195)
+}
 $(window).resize(function(){
     iWidth = $(document.body).width();
     $('.carouseImgs li').width($(document.body).width());
@@ -23,9 +47,14 @@ $(window).resize(function(){
 
         $('.footerNav').css({width:'50%'}).parent('.footerNavBox').css({'margin-left':'10%','margin-top':'3%'});
         $('.footerNavLine').hide();
-
-
         
+    }else{
+        $('.footerNav').css({width:''}).parent('.footerNavBox').css({'margin-left':'','margin-top':''});
+        $('.footerNavLine').show();
+
+        $('.fluidCenter').css({float:''})
+        $('.fluidLeft').css({float:''})
+        $('.fluidRight').css({float:''});
     }
     if(iWidth<450){
         console.log(iWidth/400*195)

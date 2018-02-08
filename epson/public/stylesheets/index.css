@@ -520,7 +520,7 @@ body {
   clear: both;
   visibility: hidden; }
 
-@media screen and (max-width: 770px) {
+@media screen and (max-width: 780px) {
   .headerBox .header .nav .hideSerach {
     display: block; }
   .headerBox .header .nav .navList {

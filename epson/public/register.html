@@ -16,6 +16,7 @@
     <div class="title">
         <form action="regSev" method="post">
             <div class="inputText"><label for=""><i class="iconfont icon-zhanghao"></i></label><input type="text" name="username" placeholder="用户名/手机号"></div> 
+            <div class="tooltipText"><span></span></div>
             <div class="inputPassword"><label for=""><i class="iconfont icon-password"></i></label><input type="password" name="userpass" placeholder="密码"></div> 
             <div class="inputPassword"><label for=""><i class="iconfont icon-password"></i></label><input type="password" name="" placeholder="重复密码"></div> 
             <div class="inputSubmit"><input type="submit" value="注册"></div> 
@@ -50,5 +51,38 @@
             </div>
         </div>
     </div>
+
+
+
+    <script src="js/jquery-1.8.3.js"></script>
+    <script>
+        $('input[name=username]').blur(function(){
+            if($(this).val() ==""){
+                $('.tooltipText span').html("用户名不能为空").css({color:'#f80'}) 
+            }else{
+                
+                $.post("regCheck","username="+$(this).val(),(isSuccess)=>{
+                
+                    if(!isSuccess){
+                        $('.tooltipText span').html("此账号可以使用").css({color:'green'})  
+                    }else{
+                        $('.tooltipText span').html("用户名已存在,请重新选择").css({color:'#f80'}) 
+                    }
+                })
+            }
+        })
+
+        
+        // $('input[name=username]').blur(function(){
+        //     $.get("regCheck","username="+$(this).val(),(isSuccess)=>{
+        //         console.log(isSuccess)
+        //         if(!isSuccess){
+        //             $('.tooltipText').html("可以使用此账号")  
+        //         }else{
+        //             $('.tooltipText').html("用户名已存在,请重新选择")
+        //         }
+        //     })
+        // })
+    </script>
 </body>
 </html>

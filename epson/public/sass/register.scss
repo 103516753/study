@@ -49,6 +49,7 @@ a{
         // margin-left: 80px;
         opacity: .9;
         margin: 0 auto;
+        position: relative;
         .inputText{
             text-align: center;
             margin-bottom: 10px;
@@ -77,6 +78,15 @@ a{
                 vertical-align: middle;
             }
             
+        }
+        .tooltipText{
+            position: absolute;
+            top: 60px;
+            left: 77%;
+            text-align: center;
+            margin-top: -5px;
+            font-size: 14px;
+            color: #f60;
         }
         .inputPassword{
             text-align: center;

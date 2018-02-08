@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+    <form name="imgform" action="uploader" method="post" enctype="multipart/form-data">
+       <input type="file" name="fulAvatar" value="上传图片">
+        <input type="submit" value="上传图片">
+    </form>
+   <img class = "imgurl" src="<%=imgfile%>" style="width: 50px;height: 50px;border: 1px solid #000" />
+
+   
+   
+//    <script>
+//        window.onload = function(){
+//            let iUrl = []
+//            let aUrl = Array.from(document.getElementsByClassName('urlimg'))
+
+//           for(i = 0; i < sUrl.length; i++){
+//             var oNewImg = document.createElement('img');
+//             oNewImg.src = sUrl
+//             document.imgform.inserBefore(oNewImg, document.fulAvatar)
+//           }
+//        }
+//    </script>
+</body>
+</html>

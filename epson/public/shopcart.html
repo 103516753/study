@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>购物车</title>
+    <link rel="stylesheet" href="stylesheets/shopcart.css">
+</head>
+<body>
+    <div class="allBox">
+        <!-- top -->
+        <div class="topshop">
+            <p></p>
+            <span>我的购物车</span>
+            <b>确认订单信息</b>
+            <label>成功提交订单</label>
+        </div>
+
+        <!-- 第二部分 -->
+        <div class="messageAll">
+            <ul class="text-ul">
+                <li class="goods1">商品</li>
+                <li>数量</li>
+                <li>单价(元)</li>
+                <li>小计(元)</li>
+                <li>操作</li>
+            </ul>
+            <div class="dealers">epson自营</div>
+            <div class="productContent">
+                <div class="cartProduct">
+                    <div class="cartMore">
+                        <h4><b>满减</b>12.12-全场购物满899元赠100元星巴克卡(限赠1)<a href="javascript:;">去选购></a></h4>
+                        <h4><b>满减</b>全场购物车满319减30、满499减60 已减60.00</h4>
+                    </div>
+                </div>
+                <ul class="cart-product-ul">
+                    <li>
+                        <a href="javascript:;"><img src="images/L405-new.png"></a>
+                        <label for=""> 
+                                墨仓式®L405（新老包装随机发货）
+                        </label>
+                        <div class="carr-num">
+                            <span class="mNum">-</span>
+                            <input type="text" value="3">
+                            <span class="addNum">+</span>
+                        </div>
+                        <div class="cartprice">
+                            ￥<span>105.00</span>
+                        </div>
+                        <div class="priceAll">
+                            ￥<span>315.00</span>
+                        </div>
+                        <div class="cart-delete">
+                            <a class="addBox" href="javascript:;">加入收藏夹</a> <br>
+                            <a class="deleteBox" href="javascript:;">删除</a>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="javascript:;"><img src="images/L405-new.png"></a>
+                        <label for=""> 
+                                墨仓式®L405（新老包装随机发货）
+                        </label>
+                        <div class="carr-num">
+                            <span class="mNum">-</span>
+                            <input type="text" value="3">
+                            <span class="addNum">+</span>
+                        </div>
+                        <div class="cartprice">
+                            ￥<span>105.00</span>
+                        </div>
+                        <div class="priceAll">
+                            ￥<span>315.00</span>
+                        </div>
+                        <div class="cart-delete">
+                            <a class="addBox" href="javascript:;">加入收藏夹</a> <br>
+                            <a class="deleteBox" href="javascript:;">删除</a>
+                        </div>
+                    </li>
+                </ul>
+        </div>
+
+        <!-- 删除弹出框 -->
+        <div class="deleteGoods">
+            <h2><i class="closeMeun"></i></h2>
+            <p>
+                <i></i>
+                确定删除吗？删除后可在回收站找回
+            </p>
+            <div class="deleteTrue">删除</div>
+            <div class="deleteFalse">不删除</div>
+        </div>
+
+        <!-- 继续购物 -->
+        <div class="continueShop">
+            <a href="list.html">返回继续购物</a>
+        </div>
+
+        <!-- 折扣 -->
+        <div class="discountCoupon">
+            <i></i>
+            <span>使用优惠券 : </span>
+            <input type="text" value="--请选择或输入优惠券号--">
+            <b></b>
+            <label for="">确定</label>
+            <ul class="discountCouponList">
+                <li data-cartId='B1DCT6W7K71A' data-discountcoupon = 15.00 >B1DCT6W7K71A:注册赠全场满99-15优惠券</li>
+                <li data-cartId='D5453AD553D6D' data-discountcoupon = 30.00  >D5453AD553D6D:注册赠全场满200-30优惠券</li>
+                <li data-cartId='CF125SS7K72A' data-discountcoupon =  50.00 >CF125SS7K72A:注册赠全场满500-50优惠券</li>
+            </ul>
+        </div>
+
+        <!-- 结算 -->
+        <div class="settleAccounts">
+            <p class = "goodsAll price1">
+                共<span>1</span>件商品
+                <b>商品总价：</b>
+                <label>￥<b>1,041.00</b></label>
+            </p>
+            <p class = "goodsAll price2">
+                <b>促销优惠：</b>
+                <label>-￥<span class="priceCoupon">0.00</span></label>
+            </p>
+            <p class = "goodsAll price3">
+                <b>券优惠：</b>
+                <label>-￥<span class="price3Coupon">0.00</span></label>
+            </p>
+            <div class="goSettle">
+                总计(不含运费)：￥<span><b class="priceOne">570.00</b></span> 
+                <a href="address.html" class="goSettleAll">去结算<b>></b></a>
+            </div>
+        </div>
+    </div>
+
+    
+    
+    
+    <script src="js/jquery-1.8.3.js"></script>
+    <script src="js/shopcart.js"></script>
+</body>
+</html>
